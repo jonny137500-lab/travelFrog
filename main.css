@@ -1,0 +1,1197 @@
+body {
+    background: #fff
+}
+
+.wrap {
+    width: 1180px;
+    margin: 0 auto
+}
+
+.nc-head {
+    height: 80px;
+    background: #3498db;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%
+}
+
+.nc-head .wrap {
+    position: relative
+}
+
+.nc-head a.logo {
+    display: block;
+    float: left;
+    width: 170px;
+    margin-top: 4px
+}
+
+.nc-head a.logo img {
+    width: 100%
+}
+
+.nc-head .nc-menu {
+    float: left;
+    margin-left: 30px
+}
+
+.nc-head .nc-menu li {
+    float: left;
+    width: 135px;
+    position: relative;
+    text-align: center
+}
+
+.nc-head .nc-menu li.cur {
+    background: #2c81ba
+}
+
+.nc-head .nc-menu li a {
+    display: block;
+    line-height: 80px;
+    font-size: 16px;
+    color: #fff
+}
+
+.nc-head .nc-menu li a:hover {
+    background: #2c81ba
+}
+
+.nc-head .nc-menu li em {
+    display: inline-block;
+    width: 7px;
+    height: 4px;
+    background: url(../images/ico_index.png) no-repeat;
+    margin-left: 9px;
+    position: relative;
+    top: -4px;
+    transition: transform ease .3s;
+    -webkit-transition: -webkit-transform ease .3s
+}
+
+.nc-head .nc-menu li .dropdown {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #2c81ba;
+    padding-bottom: 10px
+}
+
+.nc-head .nc-menu li .dropdown a {
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    margin-bottom: 5px
+}
+
+.nc-head .nc-menu li .dropdown a:hover {
+    background: #3498db
+}
+
+.nc-head .nc-menu li.cur em {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg)
+}
+
+.nc-head .nc-search {
+    position: absolute;
+    top: 22px;
+    right: 109px;
+    width: 190px;
+    height: 36px
+}
+
+.nc-head .nc-search input.srhtxt {
+    width: 0;
+    height: 16px;
+    padding: 10px 0;
+    background: #fff;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+    text-indent: 16px;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    transition: all 0.6s
+}
+
+.nc-head .nc-search input.srhtxt.long {
+    width: 190px;
+    height: 36px;
+    opacity: 1
+}
+
+.nc-head .nc-search input.srhbtn {
+    width: 17px;
+    height: 17px;
+    background: url(../images/ico_index.png) no-repeat -67px -43px;
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    right: 14px
+}
+
+.nc-head .nc-search input.srhbtn.liang {
+    background-position: -67px -20px
+}
+
+.nc-head .line {
+    background: #2c81ba;
+    height: 24px;
+    width: 1px;
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 95px
+}
+
+.nc-head .nc-login {
+    float: right;
+    width: 87px;
+    height: 80px;
+    position: relative
+}
+
+.nc-head .nc-login span.log {
+    display: block;
+    line-height: 80px
+}
+
+.nc-head .nc-login span.log i.ico-log {
+    display: block;
+    float: left;
+    width: 17px;
+    height: 15px;
+    background: url(../images/ico_index.png) -47px -43px no-repeat;
+    margin: 35px 13px 0 14px
+}
+
+.nc-head .nc-login span.log em {
+    display: inline-block;
+    width: 7px;
+    height: 4px;
+    background: url(../images/ico_index.png) no-repeat;
+    margin-left: 9px;
+    position: relative;
+    top: -4px;
+    transition: transform ease .3s;
+    -webkit-transition: -webkit-transform ease .3s
+}
+
+.nc-head .nc-login span.lodged {
+    display: block;
+    line-height: 80px;
+    position: relative
+}
+
+.nc-head .nc-login span.lodged i.ico-log {
+    display: block;
+    float: left;
+    width: 17px;
+    height: 15px;
+    background: url(../images/ico_index.png) -47px -43px no-repeat;
+    margin: 32px 5px 0 6px
+}
+
+.nc-head .nc-login span.lodged em {
+    display: inline-block;
+    width: 7px;
+    height: 4px;
+    background: url(../images/ico_index.png) no-repeat;
+    margin-left: 9px;
+    position: relative;
+    top: -4px;
+    transition: transform ease .3s;
+    -webkit-transition: -webkit-transform ease .3s
+}
+
+.nc-head .nc-login a {
+    display: block;
+    font-size: 14px;
+    color: #fff
+}
+
+.nc-head .nc-login .dropdown {
+    display: none;
+    background: #2c81ba
+}
+
+.nc-head .nc-login .dropdown a {
+    height: 66px;
+    text-align: center;
+    padding-top: 10px
+}
+
+.nc-head .nc-login .dropdown a i {
+    display: block;
+    width: 33px;
+    height: 26px;
+    background: url(../images/ico_index.png) no-repeat;
+    margin: 0 auto 3px
+}
+
+.nc-head .nc-login .dropdown a i.ico-wx {
+    background-position: 0 -72px
+}
+
+.nc-head .nc-login .dropdown a i.ico-wb {
+    background-position: -39px -72px
+}
+
+.nc-head .nc-login .dropdown a i.ico-qq {
+    background-position: -78px -72px
+}
+
+.nc-head .nc-login .dropdown a:hover {
+    background: #3498db
+}
+
+.nc-head .nc-login.cur span.log {
+    background: #2c81ba
+}
+
+.nc-msg {
+    background: #f8f8f8;
+    height: 50px;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 8;
+    width: 100%
+}
+
+.nc-msg .msgbar {
+    float: left;
+    width: 900px
+}
+
+.nc-msg .msgbar .ico-gg {
+    float: left;
+    display: block;
+    width: 29px;
+    height: 29px;
+    background: url(../images/ico_index.png) -13px 0 no-repeat;
+    margin: 11px 11px 0 0
+}
+
+.nc-msg .msgbar ul {
+    position: relative;
+    height: 50px;
+    overflow: hidden
+}
+
+.nc-msg .msgbar li {
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #ff0000
+}
+
+.nc-msg .share {
+    float: right;
+    width: 204px;
+    margin-top: 11px
+}
+
+.nc-main {
+    margin: 0 auto 0;
+    padding-top: 55px;
+}
+
+
+.zm-box-right{
+	float: right;
+    width: 280px;
+	overflow: hidden;
+}
+
+
+
+.nc-topbner .nc-gifts {
+    float: right;
+    width: 280px;
+    background: #f9f9f9;
+    height: 343px;
+    overflow: hidden;
+    border-bottom: 1px solid #ececec
+}
+
+.nc-topbner .nc-gifts .title {
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    height: 39px;
+    line-height: 39px;
+    text-indent: 20px;
+    font-size: 16px
+}
+
+.nc-topbner .nc-gifts .title a {
+    color: #313131
+}
+
+.nc-topbner .nc-gifts .title a:hover {
+    color: #3498db
+}
+
+.nc-topbner .nc-gifts .cont li {
+    height: 76px;
+    border-bottom: 1px solid #ececec
+}
+
+.nc-topbner .nc-gifts .cont li .img {
+    float: left;
+    margin: 16px 11px 0 23px;
+    width: 60px;
+    height: 45px;
+    overflow: hidden
+}
+
+.nc-topbner .nc-gifts .cont li .img img {
+    width: 100%
+}
+
+.nc-topbner .nc-gifts .cont li .info {
+    padding-top: 15px
+}
+
+.nc-topbner .nc-gifts .cont li .info h2 {
+    font-weight: normal;
+    overflow: hidden; /*内容超出后隐藏*/
+    width: 180px;
+    text-overflow: ellipsis; /* 超出内容显示为省略号*/
+    white-space: nowrap; /*文本不进行换行*/
+}
+
+.nc-topbner .nc-gifts .cont li .info h2 a {
+    color: #4c4c4c;
+    font-size: 14px;
+}
+
+.nc-topbner .nc-gifts .cont li .info .other {
+    color: #999999;
+    margin-top: 10px
+}
+
+.nc-topbner .nc-gifts .cont li .info .other span.label {
+    display: inline-block;
+    width: 60px
+}
+
+.nc-topbner .nc-gifts .cont li .info .other span.viewed {
+    display: inline-block
+}
+
+.nc-topbner .nc-gifts .cont li .info .other span.viewed i {
+    width: 15px;
+    height: 11px;
+    display: inline-block;
+    background: url(../images/ico_index.png) -47px 0 no-repeat;
+    margin-right: 5px
+}
+
+.nc-topbner .nc-gifts .cont li.cur {
+    background: #f2f2f2
+}
+
+.nc-topbner .nc-gifts .cont li.cur .info h2 a {
+    color: #3498db
+}
+
+.nc-display {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0
+}
+
+.nc-display .nc-items {
+    float: left;
+    margin: 10px;
+    overflow: hidden
+}
+
+.nc-display .nc-items .img {
+    position: relative;
+    overflow: hidden;
+    width: 100%
+}
+
+.nc-display .nc-items .img img {
+    width: 100%
+}
+
+.nc-display .nc-items .img .bg {
+    background-color: rgba(52, 152, 219, 0.9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#773498db', endColorstr='#773498db');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#773498db', endColorstr='#773498db')";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+.nc-display .nc-items .img .bg a {
+    display: block;
+    width: 110px;
+    height: 32px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    line-height: 32px;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    left: 50%;
+    margin-left: -55px
+}
+
+.nc-display .nc-items .img .bg a i.ico {
+    display: block;
+    float: left;
+    width: 14px;
+    height: 18px;
+    background: url(../images/ico_index.png) no-repeat -1px -103px;
+    margin: 7px 9px 0 13px
+}
+
+.nc-display .nc-items .img .bg a:hover {
+    color: #3498db;
+    background: #fff
+}
+
+.nc-display .nc-items .img .bg a:hover i {
+    background-position: -15px -103px
+}
+
+.nc-display .nc-items .info {
+    background: #f9f9f9;
+    height: 30px
+}
+
+.nc-display .nc-items .info h2 {
+    font-weight: normal;
+    font-size: 14px;
+    display: block;
+    padding: 0 14px;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden; /*内容超出后隐藏*/
+    width: 250px;
+    text-overflow: ellipsis; /* 超出内容显示为省略号*/
+    white-space: nowrap; /*文本不进行换行*/
+}
+
+.nc-display .nc-items .info h2 a {
+    color: #4c4c4c
+}
+
+.nc-display .nc-items .info .other {
+    margin: 0 0px
+}
+
+.nc-display .nc-items .info .other span {
+    display: block;
+    float: left;
+    color: #999999
+}
+
+.nc-display .nc-items .info .other span a {
+    color: #999999
+}
+
+.nc-display .nc-items .info .other span.label b {
+    font-weight: normal;
+    color: #3498db
+}
+
+.nc-display .nc-items .info .other span.label b a {
+    color: #3498db
+}
+
+.nc-display .nc-items .info .other span.viewed {
+    margin: 0 15px
+}
+
+.nc-display .nc-items .info .other span i.ico-v {
+    display: block;
+    float: left;
+    width: 15px;
+    height: 11px;
+    margin: 3px 6px 0 0;
+    background: url(../images/ico_index.png) no-repeat -47px 0
+}
+
+.nc-display .nc-items .info .other span i.ico-d {
+    display: block;
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 3px 6px 0 0;
+    background: url(../images/ico_index.png) no-repeat -71px 0
+}
+
+.nc-display .nc-items.active .img .bg {
+    top: 0
+}
+
+.nc-display .nc-items.active .info h2 a {
+    color: #3498db
+}
+
+.nc-page {
+    padding: 16px 0 20px
+}
+
+.nc-page a {
+    float: left;
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    margin-right: 8px
+}
+
+.nc-page a.allpage {
+    padding: 0 25px;
+    color: #3c3c3c;
+    background: #e0e0e0;
+}
+
+.nc-page a.num {
+    width: 40px;
+    background: #f5f5f5
+}
+
+.nc-page a.num:hover {
+    background: #eb5753;
+    color: #fff
+}
+
+.nc-ad {
+    text-align: center;
+    width: 960px;
+    margin: 0 auto
+}
+
+.nc-ad img {
+    width: 100%
+}
+
+.footertop {
+    width: 100%;
+    background: #444;
+    color: #bbb;
+    padding: 15px 0 20px 0
+}
+
+.footertop .footertoplistbox {
+    float: left;
+    width: 350px;
+    margin-right: 20px
+}
+
+.footertop .footertoplistbox .tagtitle {
+    font-size: 16px;
+    line-height: 28px;
+    color: #bbb
+}
+
+.footertop .footertoplistbox .tagtitle .ico-lable {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 15px;
+    background: url(../images/ico_index.png) 0 -46px no-repeat;
+    margin: 6px 10px 0 0
+}
+
+.footertop .footertoplistbox .tagtitle .ico-guanzhu {
+    display: block;
+    float: left;
+    width: 17px;
+    height: 15px;
+    background: url(../images/ico_index.png) -14px -46px no-repeat;
+    margin: 6px 10px 0 0
+}
+
+.footertop .footertoplistbox .tagtitle .ico-lik {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 15px;
+    background: url(../images/ico_index.png) -31px -46px no-repeat;
+    margin: 6px 10px 0 0
+}
+
+.footertop .footertoplistbox .taglist {
+    margin-top: 2px
+}
+
+.footertop .footertoplistbox .taglist .taglist {
+    margin-top: 2px
+}
+
+.footertop .footertoplistbox .taglist a {
+    float: left;
+    margin: 5px 5px 0 0;
+    padding: 5px 7px 5px 8px;
+    padding: 6px 7px 4px 8px \9;
+    _padding: 4px 7px 5px 8px;
+    background: #666;
+    font-size: 12px;
+    color: #bbb;
+    white-space: nowrap
+}
+
+.footertop .footertoplistbox .taglist a:hover {
+    background: #eb5753;
+    color: #fff
+}
+
+.footertop .footertoplistbox .qrcodebox {
+    padding: 30px 0 0 18px
+}
+
+.footertop .footertoplistbox .qrcodebox .qrcode {
+    float: left;
+    margin-left: 40px;
+    text-align: center
+}
+
+.footertop .footertoplistbox .qrcodebox .qrcode h2 {
+    font-weight: normal;
+    padding-top: 8px;
+    display: block
+}
+
+.footertop .footertoplistbox ul.blogroll {
+    margin-top: 2px
+}
+
+.footertop .footertoplistbox ul.blogroll li {
+    float: left;
+    display: block
+}
+
+.footertop .footertoplistbox ul.blogroll li a {
+    float: left;
+    margin: 5px 5px 0 0;
+    padding: 5px 7px 5px 8px;
+    padding: 6px 7px 4px 8px \9;
+    _padding: 4px 7px 5px 8px;
+    background: #666;
+    font-size: 12px;
+    color: #bbb;
+    white-space: nowrap
+}
+
+.footertop .footertoplistbox ul.blogroll li a:hover {
+    background: #1abc9c;
+    color: #fff
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #232323;
+    color: #bbb
+}
+
+.footer a {
+    color: #bbb
+}
+
+.footer a:hover {
+    color: #3498db
+}
+
+.footer a.zz img {
+    margin-top: 16px
+}
+
+.footer .left {
+    float: left
+}
+
+.footer .left a {
+    margin-right: 12px
+}
+
+.footer .right {
+    float: right;
+    font-size: 12px;
+    color: #999
+}
+
+.footer .right a {
+    font-size: 12px;
+    color: #999
+}
+
+@media all and (max-width: 1200px) {
+    .wrap {
+        width: 98%
+    }
+
+    .nc-head .nc-menu li {
+        width: 100px
+    }
+
+    .nc-msg .msgbar {
+        width: 75%
+    }
+
+    .nc-topbner .nc-banner {
+        width: 75%
+    }
+
+    .nc-topbner .nc-gifts{
+        width: 100%
+    }
+ .zm-box-right{
+        width: 100%
+    }
+
+    .nc-topbner .nc-gifts .title{
+        text-indent: 10px
+    }
+
+    .nc-topbner .nc-gifts .cont li .img {
+        margin: 16px 5px 0 10px
+    }
+
+    .nc-display {
+        width: 99%
+    }
+
+    .nc-display .nc-items {
+        width: 24%;
+        margin: 10px 0.5%
+    }
+
+    .nc-display .nc-items .info h2 {
+        padding: 0 5px
+    }
+
+    .nc-display .nc-items .info .other {
+        margin: 0 5px
+    }
+
+    .nc-display .nc-items .info .other span.viewed {
+        margin: 0 5px
+    }
+
+    .footertop .footertoplistbox {
+        width: 31%
+    }
+}
+
+@media all and (max-width: 1020px) {
+    .wrap {
+        width: 98%
+    }
+
+    .nc-msg .share {
+        display: none
+    }
+
+    .nc-head .nc-menu li {
+        width: 100px
+    }
+
+    .nc-msg .msgbar {
+        width: 90%
+    }
+
+    .nc-topbner .nc-banner {
+        width: 75%
+    }
+
+    .nc-topbner .nc-gifts {
+        width: 24%
+    }
+
+    .nc-topbner .nc-gifts .title {
+        text-indent: 10px
+    }
+
+    .nc-topbner .nc-gifts .cont li .img {
+        margin: 16px 5px 0 10px
+    }
+
+    .nc-display {
+        width: 99%
+    }
+
+    .nc-display .nc-items {
+        width: 32%;
+        margin: 10px 0.5%
+    }
+
+    .nc-display .nc-items .info {
+        height: auto
+    }
+
+    .nc-display .nc-items .info h2 {
+        padding: 0 5px
+    }
+
+    .nc-display .nc-items .info .other {
+        margin: 0 5px
+    }
+
+    .nc-display .nc-items .info .other span.viewed {
+        margin: 0 5px
+    }
+
+    .footertop .footertoplistbox {
+        width: 31%
+    }
+
+    .nc-head {
+        height: 60px
+    }
+
+    .nc-head a.logo {
+        width: 110px
+    }
+
+    .menu-open {
+        display: none
+    }
+
+    .nc-head .nc-search {
+        top: 10px
+    }
+
+    .nc-head .line {
+        top: 18px
+    }
+
+    .nc-head .nc-login span.log {
+        line-height: 60px
+    }
+
+    .nc-head .nc-login span.log i.ico-log {
+        margin-top: 23px
+    }
+
+    .nc-head .nc-login {
+        height: 60px
+    }
+
+    .nc-main {
+        padding-top: 130px
+    }
+
+    .nc-msg {
+        top: 60px
+    }
+
+    .nc-topbner .nc-banner {
+        width: 100%;
+        float: none
+    }
+
+    .nc-topbner .nc-gifts{
+        width: 100%;
+        float: none;
+        margin-top: 15px
+    }
+    .zm-box-right{
+        width: 100%;
+        float: none;
+        margin-top: 5px
+    }
+    .nc-ad {
+        width: 98%
+    }
+
+    .nc-topbner .nc-banner .pic li, .nc-topbner .nc-banner {
+        height: auto
+    }
+
+    .nc-menu .nc-menu-label {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        background: #2C81BA;
+        -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        -webkit-tap-highlight-color: transparent
+    }
+
+    .nc-menu .nc-menu-label.active span.nc-menu-top {
+        -webkit-transition: -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        transition: -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        transition: transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        transition: transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 30px
+    }
+
+    .nc-menu .nc-menu-label.active span.nc-menu-middle {
+        display: none
+    }
+
+    .nc-menu .nc-menu-label.active span.nc-menu-bottom {
+        top: 30px;
+        -webkit-transition: -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        transition: -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        transition: transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        transition: transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg)
+    }
+
+    .nc-bread {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        margin-left: -9px
+    }
+
+    .nc-menu-top {
+        top: 20px
+    }
+
+    .nc-menu-middle {
+        top: 28px
+    }
+
+    .nc-menu-bottom {
+        top: 36px
+    }
+
+    .nc-head .nc-menu ul.menu-open {
+        position: absolute;
+        left: -1%;
+        width: 102%;
+        top: 60px;
+        background: #2c81ba
+    }
+
+    .nc-head .nc-menu ul.menu-open li {
+        float: none;
+        width: 100%;
+        border-bottom: 1px solid #3498db
+    }
+
+    .nc-head .nc-menu ul.menu-open li a {
+        line-height: 40px;
+        margin: 10px 0
+    }
+
+    .nc-head .nc-menu ul.menu-open li a {
+        height: 30px;
+        line-height: 30px
+    }
+
+    .nc-head .nc-menu li .dropdown {
+        position: relative;
+        top: 0
+    }
+}
+
+@media all and (max-width: 640px) {
+    .nc-display .nc-items {
+        width: 49%
+    }
+
+    .footertop .footertoplistbox {
+        width: 96%;
+        float: none;
+        margin-left: 2%;
+        padding-bottom: 20px
+    }
+
+    .footer {
+        height: auto;
+        line-height: 30px
+    }
+
+    .footer .left {
+        float: none;
+        text-align: center
+    }
+
+    .footer .right {
+        float: none;
+        text-align: center
+    }
+
+    .footer a.zz img {
+        margin-top: 6px
+    }
+
+    .nc-page a {
+        height: 28px;
+        line-height: 28px;
+        margin-right: 5px;
+        margin-bottom: 5px
+    }
+
+    .nc-page a.num {
+        width: 28px
+    }
+
+    .nc-head .nc-menu {
+        margin-left: 10px
+    }
+}
+
+@media all and (max-width: 400px) {
+    .nc-display .nc-items {
+        width: 98%
+    }
+
+    .nc-head {
+        height: 50px
+    }
+
+    .nc-head .line {
+        top: 14px;
+        right: 70px
+    }
+
+    .nc-head .nc-login {
+        height: 50px;
+        width: 70px
+    }
+
+    .nc-head .nc-login span.log {
+        line-height: 50px
+    }
+
+    .nc-head .nc-login span.log i.ico-log {
+        margin-top: 18px;
+        margin-right: 5px;
+        margin-left: 10px
+    }
+
+    .nc-head a.logo {
+        width: 80px;
+        margin-top: 5px
+    }
+
+    .nc-head .nc-menu {
+        margin-left: 10px
+    }
+
+    .nc-head .nc-search input.srhtxt.long {
+        width: 120px
+    }
+
+    .nc-menu .nc-menu-label {
+        width: 36px;
+        height: 50px
+    }
+
+    .nc-menu-top {
+        top: 15px
+    }
+
+    .nc-menu-middle {
+        top: 23px
+    }
+
+    .nc-menu-bottom {
+        top: 31px
+    }
+
+    .nc-head .nc-menu ul.menu-open {
+        top: 50px
+    }
+
+    .nc-head .nc-search {
+        top: 7px;
+        right: 75px
+    }
+
+    .nc-msg {
+        top: 50px
+    }
+
+    .nc-main {
+        padding-top: 100px
+    }
+
+    .nc-msg {
+        height: 40px
+    }
+
+    .nc-msg .msgbar .ico-gg {
+        margin-top: 5px
+    }
+
+    .nc-msg .msgbar li {
+        height: 40px;
+        line-height: 40px
+    }
+
+    .nc-head a.logo {
+        width: 70px;
+        margin-top: 10px
+    }
+
+    .nc-menu .nc-menu-label.active span.nc-menu-top, .nc-menu .nc-menu-label.active span.nc-menu-bottom {
+        top: 25px
+    }
+
+    .footertop .footertoplistbox .qrcodebox {
+        padding: 10px 0 0
+    }
+
+    .nc-head .nc-login span.lodged em {
+        display: none
+    }
+
+    .nc-msg .msgbar ul {
+        height: 40px !important
+    }
+}
+
+#form-login {
+  max-width: 400px;
+  padding: 30px;
+  margin: 0 auto;
+  text-align:center;
+}
+
+#form-signup {
+  max-width: 400px;
+  padding: 30px;
+  margin: 0 auto;
+  text-align:center;
+}
